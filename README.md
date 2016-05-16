@@ -1,5 +1,5 @@
 # Really Simple Resumé
-* Template
+* Static Template
 * Clean Design
 * Responsive Design
 * Single-Page Application
