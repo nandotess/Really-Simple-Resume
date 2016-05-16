@@ -1,9 +1,9 @@
 {
-  "name": "spa-resume",
+  "name": "really-simple-resume",
   "authors": [
     "Fernando Tessmann <nandotess85@mail.com>"
   ],
-  "description": "Single-Page Application Resumé",
+  "description": "Resumé Template, Clean Design, Responsive Design, Single-Page Application, NPM, Bower, Gulp, AngularJS, Bootstrap, Sass, Prerender.io",
   "license": "GNU GPLv3",
   "private": true,
   "ignore": [

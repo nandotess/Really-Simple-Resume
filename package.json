@@ -1,7 +1,7 @@
 {
-  "name": "spa-resume",
+  "name": "really-simple-resume",
   "version": "1.0.0",
-  "description": "Single-Page Application Resumé",
+  "description": "Resumé Template, Clean Design, Responsive Design, Single-Page Application, NPM, Bower, Gulp, AngularJS, Bootstrap, Sass, Prerender.io",
   "main": "gulpfile.js",
   "author": "Fernando Tessmann",
   "license": "GNU GPLv3",
