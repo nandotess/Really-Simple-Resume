@@ -85,7 +85,7 @@ a {
 		text-decoration: none;
 	}
 }
-.btn-default {
+.btn {
 	-webkit-transition: all 250ms ease-in-out 0s;
 	-moz-transition: all 250ms ease-in-out 0s;
 	-ms-transition: all 250ms ease-in-out 0s;
@@ -147,7 +147,8 @@ a {
 	.col {
 		padding-bottom: 15px;
 	}
-	.btn-default,
+	.btn,
+	iframe,
 	small {
 		display: block;
 		width: auto;
@@ -157,7 +158,7 @@ a {
 	}
 	small {
 		line-height: 22px;
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 }
 .col {
@@ -191,7 +192,8 @@ a {
 	}
 	.section,
 	.footer {
-		.btn {
+		.btn,
+		iframe {
 			clear: none;
 			margin-top: 0;
 			margin-right: 10px;
