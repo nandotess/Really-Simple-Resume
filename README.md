@@ -1,5 +1,10 @@
-# spa-resume (Single-Page Application Resumé)
-*Template made using NPM, Bower, Gulp, AngularJS, Bootstrap, Sass, Prerender.io and <3*
+# Really Simple Resumé
+* Template
+* Clean Design
+* Responsive Design
+* Single-Page Application
+* NPM, Bower, Gulp, AngularJS, Bootstrap, Sass
+* Prerender.io (using .htaccess)
 
 ## Install NPM
 https://nodejs.org/en/
@@ -23,11 +28,9 @@ This will deploy all files inside "dist" folder in the template.
 
 This will deploy all files inside "dist" folder in the template, run server localhost and watch changes in "app" folder.
 
-## @TODO replaces
-* **.htaccess** - *@TODO-YOUR-REDIRECTS*
-* **.htaccess** - *@TODO-YOUR-PRERENDERIO-TOKEN*
-* **.htaccess** - *@TODO-YOUR-HOST*
-* **index.html** - *@TODO-YOUR-GA-ACCOUNT*
+## Replacements Required
+* **.htaccess**: *@TODO-YOUR-REDIRECTS*, *@TODO-YOUR-PRERENDERIO-TOKEN*, *@TODO-YOUR-HOST*
+* **index.html**: *@TODO-YOUR-GA-ACCOUNT*
 
-## Example
+## Real Example
 http://www.fernandotessmann.com/
