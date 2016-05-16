@@ -1,0 +1,20 @@
+{
+  "name": "spa-resume",
+  "authors": [
+    "Fernando Tessmann <nandotess85@mail.com>"
+  ],
+  "description": "Single-Page Application Resumé",
+  "license": "GNU GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap-sass": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-sanitize": "^1.5.5"
+  }
+}

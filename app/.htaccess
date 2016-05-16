@@ -1,0 +1,95 @@
+#########################################
+# Do not allow the listing of directories
+#########################################
+
+Options -Indexes
+
+##########################
+# Mime-type, Encoding, ...
+##########################
+
+AddDefaultCharset UTF-8
+AddType 'text/html; charset=UTF-8' .html
+AddType 'text/css; charset=UTF-8' .css
+AddType 'application/x-javascript; charset=UTF-8' .js
+AddType 'image/gif; charset=UTF-8' .gif
+AddType 'image/jpeg; charset=UTF-8' .jpeg
+AddType 'image/jpeg; charset=UTF-8' .jpg
+AddType 'image/png; charset=UTF-8' .png
+AddType 'application/vnd.ms-fontobject; charset=UTF-8' .eot
+AddType 'font/ttf; charset=UTF-8' .ttf
+AddType 'font/otf; charset=UTF-8' .otf
+AddType 'font/x-woff; charset=UTF-8' .woff
+AddType 'image/svg+xml; charset=UTF-8' .svg
+AddType 'video/ogg; charset=UTF-8' .ogv
+AddType 'video/webm; charset=UTF-8' .webm
+AddType 'video/mp4; charset=UTF-8' .mp4
+
+<IfModule mod_headers.c>
+	Header always set X-Powered-By "Irish Leprechauns"
+	Header always unset X-Pingback
+</IfModule>
+
+#######
+# ETags
+#######
+
+<IfModule mod_headers.c>
+	Header always unset ETag
+</IfModule>
+FileETag None
+
+######
+# GZIP
+######
+
+<IfModule mod_deflate.c>
+	SetOutputFilter deflate
+	SetEnvIfNoCase Request_URI \.(gif|jpe?g|png|ico|zip|pdf|docx?|xlsx?|pptx?|eot|ttf|otf|woff|svg|ogv|webm|mp4)$ no-gzip dont-vary
+</IfModule>
+
+############
+# HTTP Cache
+############
+
+# Resources
+<FilesMatch "\.(css|js|gif|jpe?g|png|ico|zip|pdf|docx?|xlsx?|pptx?|eot|ttf|otf|woff|svg|ogv|webm|mp4)$">
+	# One year cache
+	Header always set Cache-Control "max-age=31536000"
+</FilesMatch>
+
+# Non-resources
+<FilesMatch "(?<!\.css|\.js|\.gif|\.jpg|\.jpeg|\.png|\.ico|\.zip|\.pdf|\.doc|\.docx|\.xls|\.xlsx|\.ppt|\.pptx|\.eot|\.ttf|\.otf|\.woff|\.svg|\.ogv|\.webm|\.mp4)$">
+	# Five minutes cache
+	Header always set Cache-Control "max-age=300"
+</FilesMatch>
+
+##########
+# Rewrites
+##########
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	#@TODO-YOUR-REDIRECTS
+</IfModule>
+
+##############
+# Prerender.io
+##############
+
+<IfModule mod_headers.c>
+	RequestHeader set X-Prerender-Token "@TODO-YOUR-PRERENDERIO-TOKEN"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	<IfModule mod_proxy_http.c>
+		RewriteCond %{HTTP_USER_AGENT} baiduspider|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora\ link\ preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator [NC,OR]
+		RewriteCond %{QUERY_STRING} _escaped_fragment_
+		
+		# Only proxy the request to Prerender if it's a request for HTML
+		RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(.*) http://service.prerender.io/http://@TODO-YOUR-HOST/$2 [P,L]
+	</IfModule>
+</IfModule>
