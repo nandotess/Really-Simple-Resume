@@ -28,3 +28,6 @@ This will deploy all files inside "dist" folder in the template, run server loca
 * **.htaccess** - Line 82 - *@TODO-YOUR-PRERENDERIO-TOKEN*
 * **.htaccess** - Line 93 - *@TODO-YOUR-HOST*
 * **index.html** - Line 149 - *@TODO-YOUR-GA-ACCOUNT*
+
+## Examples
+http://www.fernandotessmann.com/
