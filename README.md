@@ -24,10 +24,10 @@ This will deploy all files inside "dist" folder in the template.
 This will deploy all files inside "dist" folder in the template, run server localhost and watch changes in "app" folder.
 
 ## @TODO replaces
-* **.htaccess** - Line 74 - *@TODO-YOUR-REDIRECTS*
-* **.htaccess** - Line 82 - *@TODO-YOUR-PRERENDERIO-TOKEN*
-* **.htaccess** - Line 93 - *@TODO-YOUR-HOST*
-* **index.html** - Line 149 - *@TODO-YOUR-GA-ACCOUNT*
+* **.htaccess** - *@TODO-YOUR-REDIRECTS*
+* **.htaccess** - *@TODO-YOUR-PRERENDERIO-TOKEN*
+* **.htaccess** - *@TODO-YOUR-HOST*
+* **index.html** - *@TODO-YOUR-GA-ACCOUNT*
 
-## Examples
+## Example
 http://www.fernandotessmann.com/
