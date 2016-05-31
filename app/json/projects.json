@@ -1,0 +1,47 @@
+{
+	"portfolio_title": "Portfolio",
+	"projects" : [
+		[
+			{
+				"title": "Project Title 1",
+				"skills": ["Tag 1"],
+				"url": "http://www.project-1.com/",
+				"url2": "project-1.com"
+			},
+			{
+				"title": "Project Title 2",
+				"skills": ["Tag 1","Tag 2"],
+				"url": "http://www.project-2.com/",
+				"url2": "project-2.com"
+			}
+		],
+		[
+			{
+				"title": "Project Title 3",
+				"skills": ["Tag 1"],
+				"url": "http://www.project-3.com/",
+				"url2": "project-3.com"
+			},
+			{
+				"title": "Project Title 4",
+				"skills": ["Tag 1","Tag 2"],
+				"url": "http://www.project-4.com/",
+				"url2": "project-4.com"
+			}
+		],
+		[
+			{
+				"title": "Project Title 5",
+				"skills": ["Tag 1"],
+				"url": "http://www.project-5.com/",
+				"url2": "project-5.com"
+			},
+			{
+				"title": "Project Title 6",
+				"skills": ["Tag 1","Tag 2"],
+				"url": "http://www.project-6.com/",
+				"url2": "project-6.com"
+			}
+		]
+	]
+}
