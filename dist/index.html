@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" ng-app="rsrApp">
+	<head ng-controller="headerController">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta name="robots" content="index,follow">
+		<meta name="fragment" content="!">
+		<meta name="URL" content="{{url}}">
+		<meta name="author" content="{{title}}">
+		<title ng-bind="title_seo"></title>
+		<meta name="description" content="{{tagline}}">
+		<meta itemprop="name" content="{{title}}">
+		<meta itemprop="description" content="{{tagline}}">
+		<meta property="profile:first_name" content="{{person.firstname}}">
+		<meta property="profile:last_name" content="{{person.lastname}}">
+		<meta property="profile:gender" content="male">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+		<header class="header" id="header" ng-controller="headerController">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-xs-12">
+						<img ng-src="{{person.image.url}}" width="{{person.image.width}}" height="{{person.image.height}}" class="img-responsive img-circle" alt="{{title}}">
+						<h1 ng-bind="title"></h1>
+						<h2 ng-bind="tagline"></h2>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="body" id="home">
+			<section class="section" id="aboutme" ng-controller="aboutController">
+				<div class="container-fluid">
+					<div class="row hidden">
+						<div class="col col-xs-12">
+							<h3 ng-bind="about_title"></h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-12" ng-bind-html="about_text"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="technical" ng-controller="skillsController">
+				<div class="container-fluid" ng-if="skills.length > 1">
+					<div class="row">
+						<div class="col col-xs-12">
+							<h3 ng-bind="skills_title"></h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-12 col-sm-4" ng-repeat="item in skills">
+							<h4 ng-bind="item.title"></h4>
+							<p ng-bind="item.skills"></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="experience" ng-controller="experiencesController">
+				<div class="container-fluid" ng-if="experiences.length > 1">
+					<div class="row">
+						<div class="col col-xs-12">
+							<h3 ng-bind="experiences_title"></h3>
+						</div>
+					</div>
+					<div class="row" ng-repeat="group in experiences">
+						<div class="col col-xs-12 col-sm-6" ng-repeat="item in group">
+							<h4>
+								<span class="title" ng-bind="item.company"></span>
+								<span class="label label-default" ng-bind="item.location"></span>
+							</h4>
+							<h5>
+								<span class="title" ng-bind="item.role"></span>
+								<span class="label label-default" ng-bind="item.date"></span>
+							</h5>
+							<p ng-bind="item.description"></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="portfolio" ng-controller="projectsController">
+				<div class="container-fluid" ng-if="projects.length > 1">
+					<div class="row">
+						<div class="col col-xs-12">
+							<h3 ng-bind="portfolio_title"></h3>
+						</div>
+					</div>
+					<div class="row" ng-repeat="group in projects">
+						<div class="col col-xs-12 col-sm-6" ng-repeat="item in group">
+							<h4>
+								<span class="title" ng-bind="item.title"></span>
+								<span class="label label-default" ng-repeat="skill in item.skills">
+									<span ng-bind="skill"></span>
+								</span>
+							</h4>
+							<p><a href="{{item.url}}" title="{{item.title}}" target="_blank" rel="nofollow" ng-bind="item.url2"></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section" id="education" ng-controller="educationsController">
+				<div class="container-fluid" ng-if="educations.length > 1">
+					<div class="row">
+						<div class="col col-xs-12">
+							<h3 ng-bind="education_title"></h3>
+						</div>
+					</div>
+					<div class="row" ng-repeat="group in educations">
+						<div class="col col-xs-12 col-sm-6" ng-repeat="item in group">
+							<h4>
+								<span class="title" ng-bind="item.title"></span>
+								<span class="label label-default" ng-bind="item.type"></span>
+							</h4>
+							<h5>
+								<span class="title" ng-bind="item.institution"></span>
+								<span class="label label-default" ng-bind="item.location"></span>
+								<span class="label label-default" ng-bind="item.date"></span>
+							</h5>
+							<p ng-bind="item.description"></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer" id="footer" ng-controller="footerController">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-xs-12">
+						<span ng-repeat="link in external_links">
+							<a class="btn btn-default btn-sm" href="{{link.url}}" ng-attr-target="{{link.new_tab ? '_blank' : undefined }}" ng-attr-rel="{{link.new_tab ? 'nofollow' : undefined }}" title="{{link.title}}" ng-bind="link.label"></a>
+						</span>
+						<a class="github-button" href="https://github.com/nandotess/really-simple-resume" data-icon="octicon-repo-forked" data-style="mega" aria-label="Fork nandotess/really-simple-resume on GitHub">Fork</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-xs-12">
+						<small ng-bind="copyright"></small>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/app.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/controllers.js"></script>
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', '@TODO-YOUR-GA-ACCOUNT']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

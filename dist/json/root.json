@@ -1,0 +1,36 @@
+{
+	"title": "John Doe",
+	"title_seo": "John Doe Resumé",
+	"tagline": "Web Developer",
+	"url": "http://www.johndoe.com/",
+	"person": {
+		"firstname": "John",
+		"lastname": "Doe",
+		"image": {
+			"url": "../images/john-doe.jpg",
+			"width": "294",
+			"height": "294"
+		}
+	},
+	"external_links": [
+		{
+			"url": "https://www.linkedin.com/in/johndoe",
+			"new_tab": true,
+			"title": "LinkedIn John Doe",
+			"label": "LinkedIn"
+		},
+		{
+			"url": "mailto:johndoe@johndoe.com",
+			"new_tab": false,
+			"title": "E-mail John Doe",
+			"label": "johndoe@johndoe.com"
+		},
+		{
+			"url": "tel:001122223333",
+			"new_tab": false,
+			"title": "Phone John Doe",
+			"label": "+001122223333"
+		}
+	],
+	"copyright": "Website made using NPM, Bower, Gulp, AngularJS, Bootstrap, Sass, Prerender.io and <3"
+}

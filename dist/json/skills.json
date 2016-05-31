@@ -1,0 +1,17 @@
+{
+	"skills_title": "Relevant Skills",
+	"skills" : [
+		{
+			"title": "Front-end",
+			"skills": "JavaScript, HTML5, CSS3, Sass, Bower, Gulp, jQuery, Bootstrap, AngularJS"
+		},
+		{
+			"title": "Back-end",
+			"skills": "LAMP, WordPress, Smarty, CodeIgniter, Memcached, Apache Solr"
+		},
+		{
+			"title": "Concepts",
+			"skills": "Single-Page Applications, Responsive Web Design, SEO, High Performance Web Sites, Web Standards"
+		}
+	]
+}
