@@ -30,7 +30,7 @@ This will deploy all files inside "dist" folder in the template, run server loca
 
 ## Replacements Required
 * **.htaccess**: *@TODO-YOUR-REDIRECTS*, *@TODO-YOUR-PRERENDERIO-TOKEN*, *@TODO-YOUR-HOST*
-* **index.html**: *@TODO-YOUR-GA-ACCOUNT*
+* **index.html**: *@TODO-YOUR-GA-CODE*
 
 ## Example
 http://really-simple-resume.nandotess.com/
