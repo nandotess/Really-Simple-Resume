@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Resumé Template, Clean Design, Responsive Design, Single-Page Application, NPM, Bower, Gulp, AngularJS, Bootstrap, Sass, Prerender.io",
   "main": "gulpfile.js",
-  "author": "Fernando Tessmann",
+  "author": "Fernando Tessmann <nandotess85@gmail.com>",
   "license": "GNU GPLv3",
+  "homepage": "https://github.com/nandotess/really-simple-resume",
   "dependencies": {
     "bower": "^1.7.7",
     "gulp": "^3.9.1",
@@ -19,5 +20,15 @@
     "gulp-concat": "^2.6.0",
     "gulp-foreach": "^0.1.0",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nandotess/really-simple-resume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nandotess/really-simple-resume/issues"
   }
 }
