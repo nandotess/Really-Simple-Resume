@@ -6,6 +6,12 @@
 * NPM, Bower, Gulp, AngularJS, Bootstrap, Sass
 * Prerender.io (using .htaccess)
 
+## Example
+[really-simple-resume.nandotess.com](http://really-simple-resume.nandotess.com/)
+
+## Real Example
+[www.fernandotessmann.com](http://www.fernandotessmann.com/)
+
 ## Install NPM
 https://nodejs.org/en/
 
@@ -31,9 +37,3 @@ This will deploy all files inside "dist" folder in the template, run server loca
 ## Replacements Required
 * **.htaccess**: *@TODO-YOUR-REDIRECTS*, *@TODO-YOUR-PRERENDERIO-TOKEN*, *@TODO-YOUR-HOST*
 * **index.html**: *@TODO-YOUR-GA-CODE*
-
-## Example
-[really-simple-resume.nandotess.com](http://really-simple-resume.nandotess.com/)
-
-## Real Example
-[www.fernandotessmann.com](http://www.fernandotessmann.com/)
