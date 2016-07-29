@@ -33,7 +33,7 @@ This will deploy all files inside "dist" folder in the template, run server loca
 * **index.html**: *@TODO-YOUR-GA-CODE*
 
 ## Example
-http://really-simple-resume.nandotess.com/
+[really-simple-resume.nandotess.com](http://really-simple-resume.nandotess.com/)
 
 ## Real Example
-http://www.fernandotessmann.com/
+[www.fernandotessmann.com](http://www.fernandotessmann.com/)
