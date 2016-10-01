@@ -9,9 +9,6 @@
 ## Example
 [really-simple-resume.nandotess.com](http://really-simple-resume.nandotess.com/)
 
-## Real Example
-[www.fernandotessmann.com](http://www.fernandotessmann.com/)
-
 ## Install NPM
 https://nodejs.org/en/
 
