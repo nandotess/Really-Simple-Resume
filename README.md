@@ -7,7 +7,7 @@
 * Prerender.io (using .htaccess)
 
 ## Example
-[really-simple-resume.nandotess.com](http://really-simple-resume.nandotess.com/)
+http://really-simple-resume.nandotess.com/
 
 ## Install NPM
 https://nodejs.org/en/
